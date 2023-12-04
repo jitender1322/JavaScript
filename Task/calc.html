@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <section id="calculator">
+        <h1>Calculate Here</h1>
+        <input type="text" id="first">
+        <input type="text" id="second">
+        <button onclick="sum()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mult()">*</button>
+        <button onclick="divi()">/</button>
+        <p id="result"></p>
+    </section>
+
+
+    <script>
+        function sum() {
+            let num1 = parseFloat(document.getElementById("first").value);
+            let num2 = parseFloat(document.getElementById("second").value);
+            let c = num1 + num2;
+            document.getElementById("result").innerHTML = c;
+            console.log(c);
+        }
+        function sub() {
+            let num1 = parseFloat(document.getElementById("first").value);
+            let num2 = parseFloat(document.getElementById("second").value);
+            let c = num1 - num2;
+            document.getElementById("result").innerHTML = c;
+            console.log(c);
+        }
+        function mult() {
+            let num1 = parseFloat(document.getElementById("first").value);
+            let num2 = parseFloat(document.getElementById("second").value);
+            let c = num1 * num2;
+            document.getElementById("result").innerHTML = c;
+            console.log(c);
+        }
+        function divi() {
+            let num1 = parseFloat(document.getElementById("first").value);
+            let num2 = parseFloat(document.getElementById("second").value);
+            let c = num1 / num2;
+            document.getElementById("result").innerHTML = c;
+            console.log(c);
+        }
+    </script>
+</body>
+
+</html>
