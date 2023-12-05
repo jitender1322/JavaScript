@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Types In JS</title>
 </head>
 
@@ -13,77 +13,72 @@
         // Data Types In JS
 
         // Programming languages that allow such things, such as JavaScript,#
-        // are called “dynamically typed”, meaning that there exist data types, 
+        // are called “dynamically typed”, meaning that there exist data types,
         // but variables are not bound to any of them.
 
-
-
-        // We have two types of Data Types 
+        // We have two types of Data Types
 
         // 1. Premitive Data Types
 
+        // Number
 
-        // Number 
+        // let a = 10.5;
+        // console.log(a);
+        // console.log(typeof a);
 
+        // // Null
 
-        let a = 10.5;
-        console.log(a);
-        console.log(typeof a);
+        // let b = null;
+        // console.log(b);
 
+        // // String
 
-        // Null 
+        // // let c = "Akshay";  // Double inverted Comma
+        // // let c = 'Akshay';   // // Single inverted Comma
+        // // let c = "Akshay is 'good' boii";      // Combination of double and Single Comma
+        // let c = `Akshay is 'good' boii in "Mern" Stack`;    // BackTick or Template Literals
+        // console.log(c);
 
-        let b = null;
-        console.log(b);
+        // // Symbol
 
+        // let d = Symbol("hey")
+        // console.log(d);
 
-        // String 
+        // // Boolean
 
+        // let e = true
+        // console.log(e);
 
-        // let c = "Akshay";  // Double inverted Comma
-        // let c = 'Akshay';   // // Single inverted Comma
-        // let c = "Akshay is 'good' boii";      // Combination of double and Single Comma
-        let c = `Akshay is 'good' boii in "Mern" Stack`;    // BackTick or Template Literals
-        console.log(c);
+        // // BigInt
 
+        // let f = 516511141456112462156456n
+        // console.log(f);
 
+        // // Undefined
 
-        // Symbol
-
-
-        let d = Symbol("hey")
-        console.log(d);
-
-
-
-        // Boolean 
-
-
-
-        let e = true
-        console.log(e);
-
-
-
-        // BigInt
-
-
-        let f = 516511141456112462156456n
-        console.log(f);
-
-
-
-        // Undefined
-
-
-        let g;
-        console.log(g);
-
+        // let g;
+        // console.log(g);
 
         // 2. Non-Premitive Data Types
 
+        // Array
 
+        let arr = [10, "hello", false, 30];
+        console.log(arr);
+        console.log(arr.length);
+        console.log(typeof arr);
 
+        // object
+
+        let obj = {
+            // key: value,
+            name: "Devarsh",
+            age: 21,
+            emailAdd: "Devarsh@google.com",
+        };
+        console.log(obj);
+        console.log(typeof obj);
+        //    console.log(obj.fav_Actress);    // undefined
     </script>
 </body>
 

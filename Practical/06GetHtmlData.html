@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get HTML Data</title>
+</head>
+
+<body>
+    <h1>Get HTML Data</h1>
+    <input type="text" name="first" id="first" class="same" value="anything" />
+    <input type="text" name="second" id="second" class="same" />
+
+    <script>
+        // Get HTML DATA
+
+        // By Id
+
+        //   let inpData = document.getElementById("first");
+        //   // let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value);
+
+        // By ClassName
+
+        //   let inpData = document.getElementsByClassName("same");
+        // let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value); // undefined
+
+        // By  Name
+
+        //   let inpData = document.getElementsByName("first");
+        //   // let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value);  // undefined
+
+        // By Tag Name
+
+        //   let inpData = document.getElementsByTagName("Input");
+        //   // let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value);    // undefined
+
+        // querySelector
+
+        //   let inpData = document.querySelector("input");
+        // //   // let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value);
+
+        //   querySelectorAll
+
+        let inpData = document.querySelectorAll("input");
+        //   // let inpData = document.getElementById("first").value
+        console.log(inpData);
+        //   console.log(inpData.value);   // undefined
+    </script>
+</body>
+
+</html>
