@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Converter</title>
+</head>
+
+<body>
+    <section id="word-converter">
+        <input type="text" id="word">
+        <button onclick="up()">UPPERCASE</button>
+        <button onclick="low()">lowercase</button>
+        <button onclick="height()">Character Count</button>
+    </section>
+
+
+
+    <script>
+        function up() {
+            let text = document.getElementById("word").value;
+            let show = text.toUpperCase();
+            console.log(show);
+        }
+        function low() {
+            let text = document.getElementById("word").value;
+            let show = text.toLowerCase();
+            console.log(show);
+        }
+        function height() {
+            let text = document.getElementById("word").value;
+            let show = text.length;
+            console.log(show);
+        }
+    </script>
+</body>
+
+</html>

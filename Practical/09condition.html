@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condition In JS</title>
+</head>
+
+<body>
+    <h1>Condition In JS</h1>
+    <script>
+        // Condition In JS
+
+        // 1. if
+
+        // syntax
+
+        // if (condition) {
+        // ...do something
+        // }
+
+        //   let a = 10;
+
+        //   if (a == 10) {
+        //     alert("Yes You Are Right.");
+        //   }
+
+        // 2. if else
+
+        // Syntax
+
+        // if (condition) {
+        //     // ...do something
+
+        // } else {
+        //     // ...do something
+
+        // }
+
+        //   let a = 1;
+
+        //   if (a == 10) {
+        //     alert("Yes You Are Right.");
+        //   }else{
+        //     alert("Sorry, You Are Wrong.");
+        //   }
+
+        // 3. if else if
+        //   let fav_Actress = "Madhubala";
+        //   let fav_Actress = "Samantha Ruth Prabhu";
+        //   let fav_Actress = "Alia bhaat";
+
+        //   if (fav_Actress == "Madhubala") {
+        //     alert("Goddess of Film Industry");
+        //   } else if (fav_Actress == "Samantha Ruth Prabhu") {
+        //     alert("Goddess of South Film Industry.");
+        //   } else {
+        //     alert("You have to chosse one of Them");
+        //   }
+
+        // 4. Switch case
+
+        //   syntax
+
+        // switch (key) {
+        //     case value:
+
+        //         break;
+
+        //     default:
+        //         break;
+        // }
+
+        //   let a = 4;
+        //   switch (a) {
+        //     case 1:
+        //       alert("One");
+        //       break;
+        //     case 2:
+        //       alert("Two");
+        //       break;
+        //     case 3:
+        //       alert("Three");
+        //       break;
+
+        //     default:
+        //         alert("None Of these")
+        //       break;
+        //   }
+
+
+
+        //   Get Day 
+
+
+        var d = new Date();
+
+        switch (d.getDay()) {
+            case 0:
+                alert("Today is Sunday.");
+                break;
+            case 1:
+                alert("Today is Monday.");
+                break;
+            case 2:
+                alert("Today is Tuesday.");
+                break;
+            case 3:
+                alert("Today is Wednesday.");
+                break;
+            case 4:
+                alert("Today is Thursday.");
+                break;
+            case 5:
+                alert("Today is Friday.");
+                break;
+            case 6:
+                alert("Today is Saturday.");
+                break;
+            default:
+                alert("No information available for that day.");
+                break;
+        }
+    </script>
+</body>
+
+</html>
