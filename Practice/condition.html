@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is your result</h1>
+    <input type="text" id="hindi" placeholder="hindi">
+    <input type="text" id="english" placeholder="english">
+    <input type="text" id="math" placeholder="math">
+    <input type="text" id="science" placeholder="science">
+    <br><br>
+    <button onclick="getresult()">get result</button>
+    <button onclick="reload()">Clear</button>
+    <br><br>
+    <span id="result"></span>
+
+
+
+    <script>
+        function getresult() {
+            let hindi = parseFloat(document.getElementById('hindi').value);
+            let english = parseFloat(document.getElementById('english').value);
+            let math = parseFloat(document.getElementById('math').value);
+            let science = parseFloat(document.getElementById('science').value);
+
+            let result = (hindi + english + math + science) / 400 * 100;
+
+            document.getElementById('result').innerText = `you got ${result} percent`
+
+            if (result >= 90) {
+                alert('you perform well')
+            }
+            else {
+                alert('you have to wrok hard')
+            }
+        }
+        function reload() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameters and arguments</title>
+</head>
+
+<body>
+    <input type="text" onblur="print(this, 'error1')">
+    <span id="error1"></span>
+    <input type="number" onblur="print(this, 'error2')">
+    <span id="error2"></span>
+    <input type="email" onblur="print(this, 'error3')">
+    <span id="error3"></span>
+
+    <script>
+        function print(a, error) {
+            if (a.value == '') {
+                document.getElementById(error).innerText = 'please fill this input first'
+            }
+            else {
+            }
+        }
+    </script>
+</body>
+
+</html>
