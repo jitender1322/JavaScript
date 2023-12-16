@@ -39,6 +39,7 @@
             margin: 5px 0;
             border-radius: 5px;
             width: 85%;
+            height: 40px;
         }
 
         .l-1 button {
@@ -106,6 +107,7 @@
             width: 160px;
             height: 50px;
             margin: 20px 0;
+            cursor: pointer;
         }
 
         #pass,
@@ -114,13 +116,13 @@
         }
 
         #name {
-            top: 111px;
+            top: 114px;
             left: 35px;
             font-size: 14px;
         }
 
         #pass {
-            top: 157px;
+            top: 164px;
             left: 35px;
             font-size: 14px;
         }
@@ -134,7 +136,7 @@
             <label for="uname" id="name">Phone number, username, or email</label>
             <input type="text" id="uname" oninput="up()" <br>
             <label for="password" id="pass">Password</label>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" oninput="upOn()"><br>
             <button id="btn">Log in</button>
             <div class="or">
                 <span class="line"></span>
@@ -160,7 +162,29 @@
 
     <script>
         function up() {
-            document.getElementById('name').style.top = '105px';
+            let naam = document.getElementById('uname').value;
+            if (naam == "") {
+                document.getElementById('name').style.top = '114px';
+                document.getElementById('name').style.fontSize = '14px';
+            }
+            else {
+                document.getElementById('name').style.top = '107px';
+                document.getElementById('name').style.fontSize = '12px';
+                document.getElementById('uname').style.paddingTop = '27px';
+            }
+        }
+        function upOn() {
+            let passW = document.getElementById('password').value;
+
+            if (passW == "") {
+                document.getElementById('pass').style.top = '164px';
+                document.getElementById('pass').style.fontSize = '14px';
+            }
+            else {
+                document.getElementById('pass').style.top = '157px';
+                document.getElementById('pass').style.fontSize = '12px';
+                document.getElementById('password').style.paddingTop = '27px';
+            }
         }
     </script>
 </body>
