@@ -50,11 +50,18 @@
 
 
     <script>
+        let currentIndex = 0;
         function add() {
             let color = ['red', 'blue', 'green', 'pink', 'brown', 'aqua'];
-            let num = parseInt(Math.random() * color.length);
-            console.log(num);
-            document.getElementById('color').style.backgroundColor = color[num];
+
+            document.getElementById('color').style.backgroundColor = color[currentIndex];
+            currentIndex++
+
+            console.log(currentIndex);
+            if (currentIndex >= color.length + 1) {
+                alert('you have to reload page')
+            }
+
         }
     </script>
 </body>
