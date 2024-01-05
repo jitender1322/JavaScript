@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+</head>
+
+<body>
+    <button class="1">fade in</button>
+    <button class="2">fade out</button>
+    <button class="3">fade toggle</button>
+    <button class="4">fade to</button>
+    <div class="box"></div>
+
+
+    <script src="../Task/jquery.js"></script>
+    <script>
+        $("body").css({ backgroundColor: 'Black', textAlign: 'center' });
+        $("button").css({ padding: '10px 20px', border: 'none', cursor: 'pointer' });
+        $(".box").css({ backgroundColor: 'white', width: '200px', height: '200px', borderRadius: '20px', margin: '30px auto' });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.1').click(function () {
+                $('.box').fadeIn()
+            })
+        })
+        $(document).ready(function () {
+            $('.2').click(function () {
+                $('.box').fadeOut()
+            })
+        })
+        $(document).ready(function () {
+            $('.3').click(function () {
+                $('.box').fadeToggle()
+            })
+        })
+        $(document).ready(function () {
+            $('.4').click(function () {
+                $('.box').fadeTo(1000, .25)
+            })
+        })
+    </script>
+</body>
+
+</html>
