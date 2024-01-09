@@ -142,9 +142,9 @@
             <img src="./img/logo_insta.png" alt=""><br>
             <label for="uname" id="name">Phone number, username, or email</label>
             <input type="text" id="uname" oninput="up()">
-            <span id="btn-2" onclick="show()"><i class="fa-regular fa-eye"></i></span>
             <label for="password" id="pass">Password</label>
             <input type="password" id="password-1" oninput="upOn()"><br>
+            <span id="btn-2" onclick="show()"><i class="fa-regular fa-eye"></i></span>
             <button id="btn">Log in</button>
             <div class="or">
                 <span class="line"></span>
@@ -195,14 +195,16 @@
             }
         }
         function show() {
-            let btn = document.getElementById('password-1').getAttribute('type');
-            if (btn = 'passwrod') {
+            let see = document.getElementById('password-1').getAttribute('type');
+            if (see == 'password') {
                 document.getElementById('password-1').setAttribute('type', 'text')
             }
             else {
                 document.getElementById('password-1').setAttribute('type', 'password')
             }
+            console.log(typeof (see));
         }
+
     </script>
 </body>
 
