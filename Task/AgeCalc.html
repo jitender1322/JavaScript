@@ -8,11 +8,16 @@
 </head>
 
 <body>
+    <h1>Get Your Age</h1>
     <p>from</p>
     <input type="date" name="" id="to">
     <p>to</p>
     <input type="date" name="" id="from">
     <button onclick="get()">calculate</button>
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="weeks"></p>
+    <p id="days"></p>
 
     <script>
         function get() {
@@ -39,7 +44,10 @@
             console.log(weeks);
             console.log(days);
 
-            document.body.innerText(`years ${year}`)
+            document.getElementById('year').innerText = `In Years ${year}`;
+            document.getElementById('month').innerText = `In Months ${month}`;
+            document.getElementById('weeks').innerText = `In Weeks ${weeks}`;
+            document.getElementById('days').innerText = `In Days ${days}`;
         }
     </script>
 </body>
