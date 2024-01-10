@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+
+<body>
+    <h1>get date</h1>
+    <input type="text" id="din">
+    <button onclick="gumja()">click</button>
+
+    <script>
+        function gumja() {
+            let date = document.getElementById('din').value;
+            let name = 'jitender'
+            date = date.split('-').reverse().join('-');
+            name = name.split('').reverse().join('');
+            console.log(date);
+            console.log(name);
+        }
+    </script>
+</body>
+
+</html>

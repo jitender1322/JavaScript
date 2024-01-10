@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Age</title>
+</head>
+
+<body>
+    <p>from</p>
+    <input type="date" name="" id="to">
+    <p>to</p>
+    <input type="date" name="" id="from">
+    <button onclick="get()">calculate</button>
+
+    <script>
+        function get() {
+            let a = document.getElementById('to').value;
+            a = a.split('');
+            a = parseInt((a.splice(0, 4)).join(''));
+            console.log(a);
+            console.log(typeof (a));
+
+
+            let b = document.getElementById('from').value;
+            b = b.split('');
+            b = parseInt((b.splice(0, 4)).join(''));
+            console.log(b);
+            console.log(typeof (b));
+
+            let year = b - a;
+            let month = year * 12;
+            let weeks = year * 52;
+            let days = year * 365;
+
+            console.log(year);
+            console.log(month);
+            console.log(weeks);
+            console.log(days);
+
+            document.body.innerText(`years ${year}`)
+        }
+    </script>
+</body>
+
+</html>
