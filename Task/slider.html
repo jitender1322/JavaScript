@@ -112,12 +112,22 @@
 
 
     <script>
-
+        let translationValue = -22;
         function next() {
-            document.getElementById('slider').style.translate = '-22%';
+            document.getElementById('slider').style.transform = `translateX(${translationValue}%)`;
+            translationValue = translationValue - 22;
+            if (translationValue <= -66) {
+                translationValue = 0;
+            }
+            console.log(translationValue);
         }
         function perv() {
-            document.getElementById('slider').style.translate = '0%'
+            document.getElementById('slider').style.transform = `translateX(${translationValue}%)`;
+            translationValue = translationValue + 22;
+            if (translationValue >= 66) {
+                translationValue = 0;
+            }
+            console.log(translationValue);
         }
     </script>
 </body>
