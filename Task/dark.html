@@ -48,6 +48,12 @@
             border-radius: 15px;
             margin: 40px 15px;
         }
+
+        #btn {
+            position: absolute;
+            top: 27.6%;
+            left: 46.9%;
+        }
     </style>
 </head>
 
@@ -56,8 +62,8 @@
         <h1>Welcome to The World of Magic</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa repudiandae dignissimos molestias illo
             necessitatibus aut.</p>
-        <button id="btn">Magic!</button>
-        <button id="btn2">Magic!!!</button>
+        <button id="btn">Magic</button>
+        <button id="btn2">Magic</button>
         <div class="pic">
             <img src="./img/pexels-nothing-ahead-3729557.jpg" alt="">
             <img src="./img/pexels-nothing-ahead-3729557.jpg" alt="">
@@ -68,23 +74,26 @@
 
     <script src="./jquery.js"></script>
     <script>
-        // $(document).ready(function () {
-        //     $('#btn').click(function () {
-        //         document.getElementById('main').style.backgroundColor = 'black';
-        //         document.getElementById('main').style.color = 'white';
-        //         document.getElementById('btn').style.color = 'black';
-        //         document.getElementById('btn').style.backgroundColor = 'white';
-        //         console.log('hyy');
-        //     })
-        //     $('#btn2').click(function () {
-        //         document.getElementById('main').style.backgroundColor = 'white';
-        //         document.getElementById('main').style.color = 'black';
-        //         document.getElementById('btn').style.color = 'black';
-        //         document.getElementById('btn').style.backgroundColor = 'white';
-        //         console.log('byy');
-        //     })
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                document.getElementById('main').style.backgroundColor = 'black';
+                document.getElementById('main').style.color = 'white';
+                document.getElementById('btn').style.color = 'black';
+                document.getElementById('btn').style.backgroundColor = 'white';
+                document.getElementById('btn').style.display = 'none';
 
-        // })
+                console.log('hyy');
+            })
+            $('#btn2').click(function () {
+                document.getElementById('main').style.backgroundColor = 'white';
+                document.getElementById('main').style.color = 'black';
+                document.getElementById('btn').style.color = 'black';
+                document.getElementById('btn').style.backgroundColor = 'white';
+                document.getElementById('btn').style.display = 'block';
+                console.log('byy');
+            })
+
+        })
 
 
 
